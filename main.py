@@ -224,11 +224,11 @@ def initialize_skaffold():
 
 
 def main():
-    # app_name, language, ports, base_image_url, metrics_to_collect = get_user_input()
-    app_name = "app"
-    ports = "5000"
-    base_image_url = "python:3.8"
-    metrics_to_collect = "metric_name"
+    app_name, language, ports, base_image_url, metrics_to_collect = get_user_input()
+    #app_name = "app"
+    #ports = "5000"
+    #base_image_url = "python:3.8"
+    #metrics_to_collect = "metric_name"
 
     generate_repository(app_name)
     generate_dockerfile(app_name, ports, base_image_url)
